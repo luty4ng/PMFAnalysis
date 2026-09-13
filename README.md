@@ -15,19 +15,16 @@ cd PMFAnalysis
 
 ### Agent 初始化
 
-1. 先读取 [`AGENTS.md`](AGENTS.md)。
-2. 输入：[`Doc/Ideas/`](Doc/Ideas/)；方法：[`Doc/Methodologies/`](Doc/Methodologies/)；输出：[`Doc/Analysis/`](Doc/Analysis/)。
-3. Ideas 与 Analysis 使用同名文件；已有报告不覆盖；“全量调研”会重新生成全部报告；报告最前面必须有评分结果。
+将仓库作为工作目录，并先阅读 [`AGENTS.md`](AGENTS.md)。调研流程、特殊命令和报告要求均以该文件为准。
 
 ## 目录
 
-| 目录                                       | 用途                                                    |
-| ------------------------------------------ | ------------------------------------------------------- |
-| [`Doc/Ideas/`](Doc/Ideas/)                 | 调研输入。每个直接子级 `.md` 文件整体作为一个调研对象。 |
-| [`Doc/Methodologies/`](Doc/Methodologies/) | 调研方法。执行调研时读取其中全部 `.md` 文件。           |
-| [`评分指标.md`](Doc/Methodologies/评分指标.md)           | 市场机会评分方法。                                     |
-| [`Doc/Analysis/`](Doc/Analysis/)           | 调研输出。报告与 Ideas 文件同名。                       |
-| [`AGENTS.md`](AGENTS.md)                   | 项目级工作规范和特殊命令。                              |
+| 目录 | 用途 |
+|---|---|
+| [`Doc/Ideas/`](Doc/Ideas/) | 调研输入 |
+| [`Doc/Methodologies/`](Doc/Methodologies/) | 调研方法 |
+| [`Doc/Analysis/`](Doc/Analysis/) | 调研输出 |
+| [`AGENTS.md`](AGENTS.md) | 项目规范和工作入口 |
 
 ## 调研报告索引
 
@@ -39,44 +36,6 @@ cd PMFAnalysis
 
 > 本索引应与 [`Doc/Analysis/`](Doc/Analysis/) 下现有报告保持一致。新增或删除报告后同步更新。
 
-## 调研规则
+## 项目规范
 
-执行“调研”时：
-
-1. 读取 [`Doc/Ideas/`](Doc/Ideas/) 下全部直接子级 `.md` 文件。
-2. 读取 [`Doc/Methodologies/`](Doc/Methodologies/) 下全部 `.md` 文件。
-3. 已有同名分析报告的 Ideas 直接跳过，不覆盖原报告。
-4. 没有同名报告的 Ideas 才创建分析报告。
-5. 报告需要标明来源，并区分事实、推断和待验证问题。
-6. 完成后核对 Ideas 与 Analysis 的一一对应关系，并汇报新建、跳过和未完成的报告。
-7. 新建或更新的报告必须在最前面输出评分结果，评分依据 [`评分指标.md`](Doc/Methodologies/评分指标.md)。
-
-## 特殊命令
-
-### `调研`
-
-按上述规则开展全部 Ideas 的市场调研，并在完成后更新本 README 的报告索引。
-
-### `全量调研`
-
-重新读取全部 Ideas 和方法论，覆盖更新所有同名分析报告，并为每份报告重新计算置顶评分。
-
-### `优化方法论`
-
-读取全部方法论，结合可用的市场调研 skill，检查并优化现有方法论，再将修改写回对应文件。
-
-## 报告内容
-
-每份报告应尽量覆盖：
-
-- 目标用户与具体场景
-- 用户问题及时间、金钱或其他代价
-- 现有解决办法、竞品和价格
-- 用户原话及来源
-- 已观察到的商业线索
-- 潜在切入点和可能改善的环节
-- 首批用户接触渠道与交付条件
-- 与自身能力的匹配程度
-- 关键未知问题和最小验证方案
-
-报告中的公开市场数据、竞品信息和价格会随时间变化。正式决策前应重新核实来源和适用范围。
+项目级文件规范、调研命令、评分机制和报告格式请参阅 [`AGENTS.md`](AGENTS.md) 及 [`Doc/Methodologies/`](Doc/Methodologies/)。
