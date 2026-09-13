@@ -17,7 +17,7 @@ cd PMFAnalysis
 
 1. 先读取 [`AGENTS.md`](AGENTS.md)。
 2. 输入：[`Doc/Ideas/`](Doc/Ideas/)；方法：[`Doc/Methodologies/`](Doc/Methodologies/)；输出：[`Doc/Analysis/`](Doc/Analysis/)。
-3. Ideas 与 Analysis 使用同名文件；已有报告不覆盖，调研完成后同步 README 索引。
+3. Ideas 与 Analysis 使用同名文件；已有报告不覆盖；“全量调研”会重新生成全部报告；报告最前面必须有评分结果。
 
 ## 目录
 
@@ -25,6 +25,7 @@ cd PMFAnalysis
 | ------------------------------------------ | ------------------------------------------------------- |
 | [`Doc/Ideas/`](Doc/Ideas/)                 | 调研输入。每个直接子级 `.md` 文件整体作为一个调研对象。 |
 | [`Doc/Methodologies/`](Doc/Methodologies/) | 调研方法。执行调研时读取其中全部 `.md` 文件。           |
+| [`评分指标.md`](Doc/Methodologies/评分指标.md)           | 市场机会评分方法。                                     |
 | [`Doc/Analysis/`](Doc/Analysis/)           | 调研输出。报告与 Ideas 文件同名。                       |
 | [`AGENTS.md`](AGENTS.md)                   | 项目级工作规范和特殊命令。                              |
 
@@ -48,12 +49,17 @@ cd PMFAnalysis
 4. 没有同名报告的 Ideas 才创建分析报告。
 5. 报告需要标明来源，并区分事实、推断和待验证问题。
 6. 完成后核对 Ideas 与 Analysis 的一一对应关系，并汇报新建、跳过和未完成的报告。
+7. 新建或更新的报告必须在最前面输出评分结果，评分依据 [`评分指标.md`](Doc/Methodologies/评分指标.md)。
 
 ## 特殊命令
 
 ### `调研`
 
 按上述规则开展全部 Ideas 的市场调研，并在完成后更新本 README 的报告索引。
+
+### `全量调研`
+
+重新读取全部 Ideas 和方法论，覆盖更新所有同名分析报告，并为每份报告重新计算置顶评分。
 
 ### `优化方法论`
 
