@@ -2,20 +2,37 @@
 
 本项目用于从 Ideas 和调研方法论出发，整理市场机会、用户问题、竞品、商业线索、潜在切入点和验证方案。
 
+## 快速安装
+
+### Git
+
+```bash
+git clone https://github.com/luty4ng/PMFAnalysis.git
+cd PMFAnalysis
+```
+
+没有 Git：打开 [GitHub 仓库](https://github.com/luty4ng/PMFAnalysis)，选择 `Code > Download ZIP`，解压后将文件夹作为 Agent 工作目录。
+
+### Agent 初始化
+
+1. 先读取 [`AGENTS.md`](AGENTS.md)。
+2. 输入：[`Doc/Ideas/`](Doc/Ideas/)；方法：[`Doc/Methodologies/`](Doc/Methodologies/)；输出：[`Doc/Analysis/`](Doc/Analysis/)。
+3. Ideas 与 Analysis 使用同名文件；已有报告不覆盖，调研完成后同步 README 索引。
+
 ## 目录
 
-| 目录 | 用途 |
-|---|---|
-| [`Doc/Ideas/`](Doc/Ideas/) | 调研输入。每个直接子级 `.md` 文件整体作为一个调研对象。 |
-| [`Doc/Methodologies/`](Doc/Methodologies/) | 调研方法。执行调研时读取其中全部 `.md` 文件。 |
-| [`Doc/Analysis/`](Doc/Analysis/) | 调研输出。报告与 Ideas 文件同名。 |
-| [`AGENTS.md`](AGENTS.md) | 项目级工作规范和特殊命令。 |
+| 目录                                       | 用途                                                    |
+| ------------------------------------------ | ------------------------------------------------------- |
+| [`Doc/Ideas/`](Doc/Ideas/)                 | 调研输入。每个直接子级 `.md` 文件整体作为一个调研对象。 |
+| [`Doc/Methodologies/`](Doc/Methodologies/) | 调研方法。执行调研时读取其中全部 `.md` 文件。           |
+| [`Doc/Analysis/`](Doc/Analysis/)           | 调研输出。报告与 Ideas 文件同名。                       |
+| [`AGENTS.md`](AGENTS.md)                   | 项目级工作规范和特殊命令。                              |
 
 ## 调研报告索引
 
-| 调研对象 | 输入 Idea | 分析报告 | 状态 |
-|---|---|---|---|
-| 税务产品 | [`税务产品.md`](Doc/Ideas/税务产品.md) | [`税务产品.md`](Doc/Analysis/税务产品.md) | 已完成方向级研究 |
+| 调研对象     | 输入 Idea                                      | 分析报告                                          | 状态             |
+| ------------ | ---------------------------------------------- | ------------------------------------------------- | ---------------- |
+| 税务产品     | [`税务产品.md`](Doc/Ideas/税务产品.md)         | [`税务产品.md`](Doc/Analysis/税务产品.md)         | 已完成方向级研究 |
 | 电子重生产品 | [`电子重生产品.md`](Doc/Ideas/电子重生产品.md) | [`电子重生产品.md`](Doc/Analysis/电子重生产品.md) | 已完成方向级研究 |
 | 沙雕生意产品 | [`沙雕生意产品.md`](Doc/Ideas/沙雕生意产品.md) | [`沙雕生意产品.md`](Doc/Analysis/沙雕生意产品.md) | 已完成方向级研究 |
 
